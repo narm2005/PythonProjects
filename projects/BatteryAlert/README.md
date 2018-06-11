@@ -8,16 +8,10 @@ will say it clear and loud whenever your battery status goes below a default cri
 
 ##### Build from tar files
 ```sh
-	wget "https://pypi.python.org/packages/source/B/BatertAlert/BatertAlert-1.1.8.tar.gz"
 	tar xzvf BateryAlert-1.1.8.tar.gz
 	cd BatertAlert-1.1.8
 	python setup.py install
 ```
-##### Build from source
-```sh
-	git clone https://github.com/tushar-rishav/BateryAlert.git BatertAlert
-	cd BatertAlert
-	python setup.py install
 ```
 ##### Using pip
 ```sh
