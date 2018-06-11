@@ -1,6 +1,6 @@
-## BatertAlert :loudspeaker:
+## BatteryAlert :loudspeaker:
 
-BatertAlert is for all the lazy people (like me :bowtie: ) who often miss desktop notifications. BatertAlert 
+BatteryAlert is for all the lazy people (like me :bowtie: ) who often miss desktop notifications. BatteryAlert 
 will say it clear and loud whenever your battery status goes below a default critical level or the level decided by you! 
 
 
@@ -8,16 +8,16 @@ will say it clear and loud whenever your battery status goes below a default cri
 
 ##### Build from tar files
 ```sh
-	tar xzvf BateryAlert-1.1.8.tar.gz
-	cd BatertAlert-1.1.8
+	tar xzvf BatteryAlert-1.1.8.tar.gz
+	cd BatteryAlert-1.1.8
 	python setup.py install
 ```
 ```
 ##### Using pip
 ```sh
-	pip install BateryAlert
+	pip install BatteryAlert
 ```
-After installation is done successfully, run any combinations of below command in your terminal once for initial setup and then we are done! If you want to use the default setup then just run  ``` BatertAlert ``` in terminal. 
+After installation is done successfully, run any combinations of below command in your terminal once for initial setup and then we are done! If you want to use the default setup then just run  ``` BatteryAlert ``` in terminal. 
 
 ###Default config:
 	language: English
@@ -51,20 +51,20 @@ optional arguments:
 To set the language eg. hindi, english , tamil. Default one is english
 ```sh
 
-BateryAlert -l hindi
+BatteryAlert -l hindi
 
 ```
 
 ##### Set rate of speaking
 ```sh
-BateryAlert -r 100
+BatteryAlert -r 100
 
 ```
 
 ##### Set your custom alert message
 ```sh
 
-BateryAlert -m "Delta is the state of mind"
+BatteryAlert -m "Delta is the state of mind"
 
 ```
 
@@ -72,20 +72,20 @@ BateryAlert -m "Delta is the state of mind"
 If the battery level is below this critical level then it will give voice alert
 
 ```sh
-BateryAlert -c 30
+BatteryAlert -c 30
 
 ```
 ##### View the set configuration
 ```sh
-BateryAlert -s
+BatteryAlert -s
 ```
 
 ##### Get help
 ```sh
-BateryAlert -h
+BatteryAlert -h
 ```
 ##### Example
 ```sh
-BateryAlert -m "Hi Check ur battery" -c 25
+BatteryAlert -m "Hi Check ur battery" -c 25
 ```
 When you run the above code, you've set "Hey,Lazy dog" as your custom message and 25 as your critical charge level.
