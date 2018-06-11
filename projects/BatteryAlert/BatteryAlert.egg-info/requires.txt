@@ -1,0 +1,3 @@
+pyttsx
+unittest2
+PrettyTable

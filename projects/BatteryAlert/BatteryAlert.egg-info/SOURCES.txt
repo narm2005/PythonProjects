@@ -1,0 +1,17 @@
+README
+setup.cfg
+setup.py
+BatteryAlert.egg-info/PKG-INFO
+BatteryAlert.egg-info/SOURCES.txt
+BatteryAlert.egg-info/dependency_links.txt
+BatteryAlert.egg-info/entry_points.txt
+BatteryAlert.egg-info/requires.txt
+BatteryAlert.egg-info/top_level.txt
+src/Alert.py
+src/BatteryStatus.py
+src/Bsettings.py
+src/Config.py
+src/Voice.py
+src/__init__.py
+src/main.py
+test/test.py

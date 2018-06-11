@@ -12,9 +12,9 @@ setup(name='BatteryAlert',
       version='1.1.8',
       install_requires=[
           r for r in open('requirements.txt', 'r').read().split('\n') if r],
-      packages=['balert', ],
+      packages=['src', ],
       entry_points={
-          'console_scripts': ['balert=balert:main'],
+          'console_scripts': ['batteryalert=BatteryAlert:main'],
       },
       description="A speaking battery's charge level",
       long_description=open('README').read(),
