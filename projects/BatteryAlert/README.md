@@ -86,13 +86,6 @@ BateryAlert -h
 ```
 ##### Example
 ```sh
-BateryAlert -m "Hey,Lazy dog " -c 25
+BateryAlert -m "Hi Check ur battery" -c 25
 ```
 When you run the above code, you've set "Hey,Lazy dog" as your custom message and 25 as your critical charge level.
-
-
-### Contributions
-Have an idea to make it better? Go ahead! I will be happy to see a pull request from you! :blush:
-
-### License
-![gpl](https://cloud.githubusercontent.com/assets/7397433/9025904/67008062-3936-11e5-8803-e5b164a0dfc0.png)
