@@ -1,0 +1,63 @@
+
+Testcases:
+
+1. Given 10 gateways with 2 repeaters each, what is the average total upgrade time over 10 runs?
+================================================================================================
+
+ANS:
+2019-10-15 11:03:17,078 - __main__ - INFO - Average simulation running time for 10 runs :(foreach run 10 Gateway & 2 Repeater) :18.51
+
+for simulating the above testcase:
+$python main.py -d 100 -s 50 -g 10 -r 2 -i 5 -n 10
+
+
+====================================================================================================
+2. Over these 10 runs, at the 8 minute mark, how many gateways and repeaters were at each point in
+the upgrade cycle?
+
+ANS:
+Based on above scenario, at the 8th minute mark, 10 gateways and 2 repeater were initialized the first check in process.
+
+for simulating the above testcase:
+$python main.py -d 100 -s 50 -g 10 -r 2 -i 5 -n 10
+
+=======================================================================================================
+3. Which network upgrades faster on average, a network with 3 gateways with 4 repeaters each or a
+network with 4 gateways and 3 repeaters each?
+
+4 Gateway and 3 Repeater each:
+INFO:__main__:Average simulation running time for 1 runs :(foreach run 4 Gateway & 3 Repeater) :19.54
+
+3 Gateway and 4 Repeater each:
+INFO:__main__:Average simulation running time for 1 runs :(foreach run 3 Gateway & 4 Repeater) :23.65
+
+
+ANS: With 3 Gateway and 4 Repeater are faster based on the above simulation results.
+
+for simulating the above scenario 1: (4 Gateway and 3 Repeater each)
+$python main.py -d 100 -s 50 -g 4 -r 3 -i 5 -n 1
+
+for simulating the above scenario 2: (3 Gateway and 4 Repeater each)
+$python main.py -d 100 -s 50 -g 3 -r 4 -i 5 -n 1
+
+
+
+==========================================================================================================
+4. If the random times range from 0.00 to 6.00 minutes instead of 0.00 to 5.00, how does that affect the
+total average time on 10 runs? What new problems does this cause?
+
+for each random range 0.00 to 6.00: (1 Gateway and 1 Repeater & 6 min interval)
+INFO:__main__:Average simulation running time for 10 runs :(foreach run 10 Gateway & 2 Repeater) :21.70
+
+for each random range 0.00 to 5.00: (1 Gateway and 1 Repeater & 5 min interval)
+ __main__ - INFO - Average simulation running time for 10 runs :(foreach run 10 Gateway & 2 Repeater) :18.51
+
+ANS:
+For every simulation with 1 Gateway, 1 Repeater & 6 min interval its is taking more time to upgrade.
+
+
+for simulating the above scenario 1: (1 Gateway and 1 Repeater & 6 min interval)
+$python main.py -d 100 -s 50 -g 1 -r 1 -i 6 -n 1
+
+for simulating the above scenario 2: (1 Gateway and 1 Repeater & 5 min interval)
+$python main.py -d 100 -s 50 -g 1 -r 1 -i 5 -n 1
